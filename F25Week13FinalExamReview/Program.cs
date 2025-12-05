@@ -1,5 +1,6 @@
 using F25Week13FinalExamReview.Components;
 using F25Week13FinalExamReview.Data;
+using F25Week13FinalExamReview.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace F25Week13FinalExamReview
@@ -17,6 +18,9 @@ namespace F25Week13FinalExamReview
             // register the context class
             var connStr = builder.Configuration.GetConnectionString("ProductConnection");
             builder.Services.AddDbContext<ProductContext>(options => options.UseSqlServer(connStr));
+
+            // register the service class
+            builder.Services.AddScoped<ProductService>();
 
             var app = builder.Build();
 
