@@ -19,12 +19,12 @@ namespace F25Week13FinalExamReview.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>().HasData(
-            new Category { CategoryId = 1, CategoryName = "Electronics" },
-            new Category { CategoryId = 2, CategoryName = "Clothing" },
-            new Category { CategoryId = 3, CategoryName = "Home Appliances" },
-            new Category { CategoryId = 4, CategoryName = "Books" },
-            new Category { CategoryId = 5, CategoryName = "Sports Equipment" }
-        );
+                new Category { CategoryId = 1, CategoryName = "Electronics" },
+                new Category { CategoryId = 2, CategoryName = "Clothing" },
+                new Category { CategoryId = 3, CategoryName = "Home Appliances" },
+                new Category { CategoryId = 4, CategoryName = "Books" },
+                new Category { CategoryId = 5, CategoryName = "Sports Equipment" }
+            );
 
             modelBuilder.Entity<Product>().HasData(
                 new Product
