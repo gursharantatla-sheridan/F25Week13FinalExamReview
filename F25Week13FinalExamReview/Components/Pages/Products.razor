@@ -63,8 +63,8 @@
     private string? searchKeyword = null;
     private int catId = -1;
 
-    private List<Category> categories;
-    private List<Product> products;
+    private List<Category> categories = new();
+    private List<Product> products = new();
 
     protected override async Task OnInitializedAsync()
     {
